@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,Switch
 } from 'react-router-dom';
-import Register from './components/Registration/index';
+import {Register} from './components/Registration/Register';
 import {Provider} from 'react-redux'
 import {store} from './store/store/store';
 

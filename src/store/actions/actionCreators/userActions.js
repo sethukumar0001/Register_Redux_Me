@@ -1,22 +1,21 @@
 import {userConstants} from '../types/index';
 
 export const userActions ={
-    login,
-    logout,
-    register,
-    getall,
-    delete:_delete
+   register
 }
 
-function register(user){
-    return dispatch =>{
-        dispatch(request(user))
-    }
+function register(user) {
+    console.log(user)
+    return dispatch => {
+        dispatch(request(user));
+    };
 
-    function request(user){
-        return{
-            type:userConstants.REGISTER_REQUEST,
-            user
+    function request(user) {
+        console.log(user)
+         return { 
+             type: userConstants.REGISTER_REQUEST,
+              user 
+            }
         }
-    }
+    
 }
